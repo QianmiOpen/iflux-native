@@ -1,0 +1,23 @@
+{
+  "name": "iflux-native",
+  "version": "1.0.0",
+  "description": "iflux是我们探索将immutable.js和react.js更好的粘合的一种方案, 现在我们支持native端",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/hufeng/iflux-native.git"
+  },
+  "keywords": [
+    "immutbale",
+    "react",
+    "Native",
+    "iflux"
+  ],
+  "author": "hufeng <loveruby1988@qq.com>",
+  "license": "BSD",
+  "dependencies": {
+  }
+}

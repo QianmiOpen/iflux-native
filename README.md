@@ -49,7 +49,7 @@
 +-----------------------+
 |   Store（immutable）   |<-----+
 +-----------------------+      |
-           |                   |
+           | connectToStore    |
            | StoreMixin        | msg(EventEmitter)
           \|/                  |
 +------------------------+     |

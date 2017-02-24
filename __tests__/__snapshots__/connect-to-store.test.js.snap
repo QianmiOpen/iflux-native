@@ -5,3 +5,9 @@ exports[`connectToStore test suite it initial render 1`] = `
   iflux-native
 </div>
 `;
+
+exports[`connectToStore test suite it initial render 2`] = `
+<div>
+  iflux2
+</div>
+`;

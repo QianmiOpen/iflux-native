@@ -13,6 +13,10 @@ appStore.init = function () {
   appStore.cursor().set('name', 'iflux-native');
 };
 
+appStore.setName = function (name) {
+  appStore.cursor().set('name', name)
+}
+
 class HelloApp extends Component {
   componentDidMount() {
     appStore.init()
@@ -30,8 +34,11 @@ class HelloApp extends Component {
 const TestApp = connectToStore(appStore)(HelloApp);
 
 describe('connectToStore test suite', () =>
-  it('it initial render', () => {
-    const tree = renderer.create(<TestApp />).toJSON()
-    expect(tree).toMatchSnapshot()
+  it('it initial render && store set name', () => {
+    let Component = renderer.create(<TestApp />)
+    expect(Component.toJSON()).toMatchSnapshot();
+
+    appStore.setName('iflux2')
+    expect(Component.toJSON()).toMatchSnapshot()
   })
 )

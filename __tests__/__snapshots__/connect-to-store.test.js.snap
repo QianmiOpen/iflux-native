@@ -1,0 +1,7 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`connectToStore test suite it initial render 1`] = `
+<div>
+  iflux-native
+</div>
+`;
